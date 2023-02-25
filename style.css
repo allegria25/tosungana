@@ -780,6 +780,7 @@ header{
  background-color: var(--couleur-menu-active);
  width: 30%;
  border-radius: 5px;
+ border: 1px solid var(--couleure-blue);
  
 }
 
@@ -791,11 +792,12 @@ header{
     border-radius: 5px;
     color: white;
     transition: all 0.5s;
+    border: 1px solid white;
+    transition: all 0.5s;
 }
 
 .liens-fixe i:hover{
-
-    background-color: var(--couleur-menu-active);
+    filter: saturate(0%);
     
 }
 
