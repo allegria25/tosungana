@@ -107,15 +107,25 @@ nav ul li button{
     border:1px solid white;;
 }
 
+nav ul li a:not(.except){
+    transition: all 1s;
+    border-bottom: 3px solid var(--couleur-menu-active);
+    border-top: 3px solid white;
+    border-radius: 50px;
+
+}
+
 nav ul li a:not(.except):hover{
     color: var(--couleur-menu-active);
     border-radius: 50px;
+    border-top: 3px solid var(--couleure-blue);
+    
 }
 
 nav ul li a:not(.except)active{
-    color: red;
-    background-color:#1c78ad;
+    color: var(--couleur-menu-active);
     border-radius: 50px;
+    border-bottom: 3px solid var(--couleur-menu-active);
 }
 
 nav ul li a{
