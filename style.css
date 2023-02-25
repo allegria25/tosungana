@@ -35,30 +35,6 @@ body{
 }
 
 
-button{
-    outline: none;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 20px;
-    transition: all 0.5s;
-    font-weight: bold;
-}
-
-button:hover{
-    background-color: var(--couleur-menu-active);
-    border-radius: 20px;
-    border:1px solid white;
-    color: white;
-    
- }
-
- button:active{
-    background-color: white;
-    border-radius: 20px;
-    border:1px solid black;
-    color: black;
-    
- }
 
 nav{
     width: 100%;
@@ -101,30 +77,25 @@ nav ul li{
     padding: 5px 20px;
 }
 
-nav ul li button{
-    background-color: var(--couleure-blue);
-    color: white;
-    border:1px solid white;;
-}
 
 nav ul li a:not(.except){
     transition: all 1s;
     border-bottom: 3px solid var(--couleur-menu-active);
     border-top: 3px solid white;
-    border-radius: 50px;
+    border-radius: 5px;
 
 }
 
 nav ul li a:not(.except):hover{
     color: var(--couleur-menu-active);
-    border-radius: 50px;
+    border-radius: 5px;
     border-top: 3px solid var(--couleure-blue);
     
 }
 
 nav ul li a:not(.except)active{
     color: var(--couleur-menu-active);
-    border-radius: 50px;
+    border-radius: 5px;
     border-bottom: 3px solid var(--couleur-menu-active);
 }
 
@@ -135,11 +106,25 @@ nav ul li a{
     padding: 5px 20px;
 }
 
+.except button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--couleure-blue);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
 header{
     display: flex;
     flex-direction: column;
     
 }
+
 
 
 
