@@ -183,13 +183,6 @@ header{
     
  }
 
- .background .background-texte .clic button:active{
-    background-color: white;
-    border-radius: 20px;
-    border:1px solid black;
-    color: black;
-    
- }
 
  .background .background-texte .trait{
     width: 50px;
@@ -317,13 +310,6 @@ header{
     
  }
 
- .cadre button:active{
-    background-color: white;
-    border-radius: 20px;
-    border:1px solid black;
-    color: black;
-    
- }
 
  .image-bienvenu {
     background-color: var(--couleure-blue);
@@ -808,6 +794,23 @@ footer .footer-first .reseaux ul li{
     
 }
 
+footer .footer-first .reseaux ul li a{
+    font-size: 25px;
+    transition: all 0.5s;
+     
+ }
+
+ footer .footer-first .reseaux ul li a:hover{
+    color: var(--couleur-menu-active);
+     
+ }
+
+ footer .footer-first p{
+    font-weight: bold;
+    font-size: 20px;
+     
+ }
+
 footer .footer-second ul li a{
     color: white;
      
@@ -822,9 +825,10 @@ footer .footer-second{
     justify-content: space-around;
     margin-bottom: 10px;
     flex-wrap: wrap;
+   
 }
 
-footer .footer-second ul li a i {
+footer .footer-second ul li i {
     margin-right: 10px;
 }
 
@@ -837,6 +841,47 @@ footer li{
 
 footer h3{
     margin : 20px 0 20px 0;
+}
+
+
+.footer-end{
+    color: white;
+    background-color: var(--couleur-menu-active);
+    width: 95%;
+    height: 100px;
+    margin: 0 auto; 
+
+}
+
+.footer-end .contenus .mes-reseaux a{
+    margin: 5px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: red;
+    transition: all 0.5s;
+    border: 2px solid var(--couleur-menu-active);
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-end .contenus .mes-reseaux a:hover{
+     filter: brightness(70%);
+     border: 2px solid white;
+     background-color: var(--couleure-blue);
+
+}
+
+.footer-end .contenus p{
+    font-size: 20px;
+    
+}
+
+.contenus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0 20px 0 20px;
 }
 
 
@@ -983,7 +1028,7 @@ footer h3{
         flex-direction: column;
         text-align: center;
         height:100vh;
-        width: 100%;
+        width: 70%;
         position: fixed;
         background-color: var(--couleure-blue);
         align-items: center;
@@ -1244,7 +1289,6 @@ footer .footer-second{
     
     flex-direction: column;
     padding-left: 20px;
-    
 }
 
 
@@ -1260,16 +1304,23 @@ footer .footer-first .reseaux ul li{
      
  }
 
- .copy{
-  align-items: left;
-  flex-direction: column;
-  margin: 0 auto;
+ .concpteur{
+    padding-bottom: 30px;
  }
 
- .copy p {
-    margin: 0;
-
+ .footer-end{
+    height: 200px;
  }
+
+ .contenus{
+    flex-direction: column;
+
+}
+
+.footer-end .contenus p{
+    padding-bottom: 50px;
+    
+}
 
 
 
