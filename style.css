@@ -763,6 +763,42 @@ header{
 
 }
 
+.lienss{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+.liens-fixe{
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ left: 600px;
+ bottom: 20px;
+ background-color: var(--couleur-menu-active);
+ width: 30%;
+ border-radius: 5px;
+ 
+}
+
+.liens-fixe i{
+    font-size: 30px;
+    padding: 5px 8px;
+    margin: 5px;
+    background-color: var(--couleure-blue);
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.liens-fixe i:hover{
+
+    background-color: var(--couleur-menu-active);
+    
+}
+
 
 
 
@@ -1284,6 +1320,13 @@ footer h3{
 .first{
     margin-bottom: 50px;
 }
+
+.liens-fixe{
+    
+    width: 60%;
+ 
+    
+   }
 
 footer .footer-second{
     
