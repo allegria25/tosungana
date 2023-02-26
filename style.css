@@ -110,13 +110,19 @@ nav ul li a{
     text-decoration: none;
     outline: none;
     border: none;
-    padding: 1px 20px;
+    padding: 10px 20px;
     background-color: var(--couleure-blue);
     border-radius: 5px;
     color: white;
     font-size: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.except button:hover{
+    background-color: var(--couleur-menu-active);
+   
 }
 
 header{
