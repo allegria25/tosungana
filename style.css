@@ -892,7 +892,7 @@ footer h3{
 
 }
 
-.footer-end .contenus .mes-reseaux a{
+.footer-end .contenus .mes-reseaux a {
     margin: 5px;
     font-size: 30px;
     padding: 5px;
@@ -901,10 +901,10 @@ footer h3{
     border: 2px solid var(--couleur-menu-active);
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .footer-end .contenus .mes-reseaux a:hover{
-     filter: brightness(70%);
      border: 2px solid white;
      background-color: var(--couleure-blue);
 
