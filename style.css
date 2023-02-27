@@ -300,6 +300,7 @@ header{
     border-radius: 20px;
     transition: all 0.5s;
     font-weight: bold;
+    transition: all 0.5s;
     
 }
 
@@ -625,7 +626,7 @@ header{
 .collection{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
-    background-color: rgb(238, 234, 234);
+    background-color: var(--couleur-blanc-different);
     margin-bottom: 50px;
     width: 95%;
     margin: 0 auto;
@@ -636,11 +637,6 @@ header{
 
 }
 
-.collection:hover{
-    transform: translateY(-10px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
-}
 
 
 .collection .col-ecrit{
@@ -663,11 +659,21 @@ header{
     background-color: var(--couleur-menu-active);
     margin-top: 10px;
     color: white;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    transition: all 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid var(--couleur-blanc-different);
+
 }
 
 .collection .col-ecrit button:hover{
     background-color: #1c78ad;
+    box-shadow: none;
+    border: 1px solid var(--couleur-menu-active);
  
 }
 
@@ -766,7 +772,7 @@ header{
 
 .lienss{
     position: fixed;
-    bottom: 20px;
+    bottom: 55px;
     width: 100%;
     z-index: 10;
     
@@ -892,23 +898,26 @@ footer h3{
 
 }
 
-.footer-end .contenus .mes-reseaux a {
+.footer-end .contenus .mes-reseaux i {
     margin: 5px;
     font-size: 30px;
     padding: 5px;
-    background-color: red;
+    background-color: rgb(148, 126, 126);
     transition: all 0.5s;
     border: 2px solid var(--couleur-menu-active);
     color: white;
     border-radius: 5px;
+    transition: 0.5s;
     cursor: pointer;
+    
 }
 
-.footer-end .contenus .mes-reseaux a:hover{
-     border: 2px solid white;
-     background-color: var(--couleure-blue);
-
+.footer-end .contenus .mes-reseaux i:hover{
+    background-color: red;
+   
 }
+
+
 
 .footer-end .contenus p{
     font-size: 20px;
@@ -921,6 +930,7 @@ footer h3{
     align-items: center;
     padding-top: 30px;
     margin: 0 20px 0 20px;
+  
 }
 
 
@@ -1096,7 +1106,7 @@ footer h3{
     }
 
     .faux-nav li a:active{
-        color: var(--couleur-menu-active);
+        color: var(white);
     }
 
     .faux-nav li a:hover{
