@@ -456,27 +456,39 @@ header{
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: var(--couleure-blue);
+    background-color: white;
     padding-top: 10px;
     padding-right: 15px;
     padding-left: 10px;
+    transition: all 0.5s;
+    border: 1px solid var(--couleure-blue);
     
  }
 
+ .border{
+    border-top: 1px solid black;
+    height: 1px;
+    width: 100%;
+ }
 
- 
+ .voir:hover{
+    background-color: var(--couleure-blue);
+    border: white;
+ }
 
 
 
  .horphelinat{
     color: var(--couleure-blue);
+    border-bottom: 1PX solid rgb(211, 202, 202);
+    padding-top: 10px;
  }
 
  .voir a{
     font-size: 15px;
     padding: 0 0 10px 10px;
     font-weight: bold;
-    color: white;
+    color: var(--couleure-blue);
     transition: all 0.5s;
  }
 
@@ -508,7 +520,7 @@ header{
  .visite-prix{
     display: flex;
     text-align: center;
-    padding: 0 0 10px 10px;
+    padding: 5px 0 10px 10px;
   
  }
 
