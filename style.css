@@ -416,7 +416,7 @@ header{
 
  .visite{
     width: 300px;
-    background-color: var(--couleur-menu-active);
+    background-color: var(--couleure-blue);
     flex: 1 200px;
     margin: 50px;
     position: relative;
@@ -425,7 +425,7 @@ header{
  }
 
  .visite:hover{
-    background-color: var(--couleure-blue);
+    background-color: var(--couleur-menu-active);
    
  }
 
@@ -454,17 +454,17 @@ header{
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 10px;
+    background-color: var(--couleure-blue);
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 10px;
+    
  }
 
- .voir a::before{
-    content: "                ";
-    padding: 4px;
-    border-top: 0.1px solid rgb(212, 203, 203);
-    display: flex;
-    width: 100%;
- }
+
+ 
 
 
 
@@ -476,7 +476,7 @@ header{
     font-size: 15px;
     padding: 0 0 10px 10px;
     font-weight: bold;
-    color: var(--couleure-blue);
+    color: white;
     transition: all 0.5s;
  }
 
