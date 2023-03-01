@@ -560,21 +560,31 @@ header{
  .image-visite-image .images img{
     width: 100%;
     border-radius: 20px; 
+   
  }
 
 
- .image-visite-image .images::after{
-    text-align: center;
-    content: ".";
-    width: 100%;
+ .image-visite-image .images .image-bloc{
     height: 100%;
-    background-color: white;
-    opacity: 90%;
+    width: 100%;
+    background-color: #1c78ad;
     position: absolute;
-    border-radius: 20px;
-    top: 80px;
-    left: 90px; 
-    color: white;
+    top: 100px;
+    left: 80px;
+    border-radius: 20px; 
+    opacity: 80%;
+    text-align: center;
+    
+ }
+
+ .image-visite-image .images .image-bloc p{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    
+
  }
 
 
@@ -1255,18 +1265,31 @@ footer h3{
         border-radius: 20px; 
      }
     
-    
-     .image-visite-image .images::after{
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       width: 300px;
-        height: 300px;
-     }
+
 
      .image-visite-texte .texte {
         width: 80%;
         margin: 0 auto;
+     }
+
+     .image-visite-image .images .image-bloc{
+        height: 70%;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+        
+     }
+    
+     .image-visite-image .images .image-bloc p{
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+        
+    
      }
 
     .milieu{
