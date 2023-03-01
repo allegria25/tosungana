@@ -432,7 +432,7 @@ header{
 
  .texte-visite{
     background-color: var(--couleur-blanc-different);
-    height: 150px;
+    height: 170px;
 
  }
 
@@ -493,7 +493,7 @@ header{
  }
 
  .voir a:hover{
-    color: var(--couleur-menu-active);
+    color: white;
  }
 
  .voir i{
