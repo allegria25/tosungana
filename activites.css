@@ -190,7 +190,7 @@
     height:70vh;
     transition: 500ms;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 3px;
     background-color: var(--couleure-blue);
   }
@@ -232,96 +232,53 @@
     max-width: 100%;
   }
 
-  :where(.six) {
-    background-image: url('images/visite2022/IMG-20221230-WA0012.jpg');
-    background-size: cover;
-    transition: 300ms;
-    max-width: 100%;
-  }
-
-  :where(.sept) {
-    background-image: url('images/visite2022/IMG-20221230-WA0016.jpg');
-    background-size: cover;
-    transition: 300ms;
-    max-width: 100%;
-  }
-
-  :where(.huit) {
-    background-image: url('images/visite2022/IMG-20221230-WA0022.jpg');
-    background-size: cover;
-    transition: 300ms;
-    max-width: 100%;
-  }
 
   /*hover sur les images de la gallerie**/
   
   #grid:has(.un:hover) {
-    grid-template-columns:  2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+    grid-template-columns:  2fr 0.5fr 0.5fr 0.5fr 0.5fr;
   }
   
   #grid:has(.deux:hover) {
-    grid-template-columns:  0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+    grid-template-columns:  0.5fr 2fr 0.5fr 0.5fr 0.5fr;
   }
 
   #grid:has(.trois:hover) {
-    grid-template-columns:  0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+    grid-template-columns:  0.5fr 0.5fr 2fr 0.5fr 0.5fr;
   }
 
   #grid:has(.quatre:hover) {
-    grid-template-columns:  0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 2fr 0.5fr;
   }
 
   #grid:has(.cinq:hover) {
-    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 2fr ;
   }
 
-  #grid:has(.six:hover) {
-    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr
-  }
-
-  #grid:has(.sept:hover) {
-    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr
-  }
-
-  #grid:has(.huit:hover) {
-    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr
-  }
 
 
   @media screen and (max-width : 700px) {
 
     #grid:has(.un:hover) {
-        grid-template-columns:  3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+        grid-template-columns:  3fr 0.3fr 0.3fr 0.3fr 0.3fr;
       }
       
       #grid:has(.deux:hover) {
-        grid-template-columns:  0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+        grid-template-columns:  0.3fr 3fr 0.3fr 0.3fr 0.3fr;
       }
     
       #grid:has(.trois:hover) {
-        grid-template-columns:  0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+        grid-template-columns:  0.3fr 0.3fr 3fr 0.3fr 0.3fr;
       }
     
       #grid:has(.quatre:hover) {
-        grid-template-columns:  0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr
+        grid-template-columns:  0.3fr 0.3fr 0.3fr 3fr 0.3fr;
       }
     
       #grid:has(.cinq:hover) {
-        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr
+        grid-template-columns:  0.3fr 0.3fr 0.3fr 0.3fr 3fr;
       }
-    
-      #grid:has(.six:hover) {
-        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr
-      }
-    
-      #grid:has(.sept:hover) {
-        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr
-      }
-    
-      #grid:has(.huit:hover) {
-        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr
-      }
-  
+
     
   }
 /***grid*/
