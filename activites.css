@@ -135,7 +135,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .button button{
@@ -156,12 +156,172 @@
 
 
 .after-font{
+    
    
+}
+
+.after-font-texte{
+    width: 50%;
+    padding: 50px 0 0 20px;
+}
+
+.after-font-texte h3{
+    font-size: 2rem;
+}
+
+.after-font-texte p{
+    font-size: 1rem;
 }
 
 @media screen and (max-width : 900px) {
     .texte{
         width: 90%;
     }
+
+    .after-font-texte{
+        width: 80%;
+        padding: 50px 0 0 20px;
+    }
     
 }
+
+/**grid**/
+#grid {
+    height:70vh;
+    transition: 500ms;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    background-color: var(--couleure-blue);
+  }
+  
+ 
+  
+  :where(.un) {
+    background-image: url('images/visite2022/IMG-20221230-WA0009.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.deux) {
+    background-image: url('images/visite2022/IMG-20221230-WA0021.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.trois) {
+    background-image: url('images/visite2022/IMG-20221230-WA0020.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.quatre) {
+    background-image: url('images/visite2022/IMG-20221230-WA0009.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.cinq) {
+    background-image: url('images/visite2022/IMG-20221230-WA0010.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.six) {
+    background-image: url('images/visite2022/IMG-20221230-WA0012.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.sept) {
+    background-image: url('images/visite2022/IMG-20221230-WA0016.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  :where(.huit) {
+    background-image: url('images/visite2022/IMG-20221230-WA0022.jpg');
+    background-size: cover;
+    transition: 300ms;
+    max-width: 100%;
+  }
+
+  /*hover sur les images de la gallerie**/
+  
+  #grid:has(.un:hover) {
+    grid-template-columns:  2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+  }
+  
+  #grid:has(.deux:hover) {
+    grid-template-columns:  0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+  }
+
+  #grid:has(.trois:hover) {
+    grid-template-columns:  0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+  }
+
+  #grid:has(.quatre:hover) {
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr
+  }
+
+  #grid:has(.cinq:hover) {
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr
+  }
+
+  #grid:has(.six:hover) {
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr
+  }
+
+  #grid:has(.sept:hover) {
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr
+  }
+
+  #grid:has(.huit:hover) {
+    grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr
+  }
+
+
+  @media screen and (max-width : 700px) {
+
+    #grid:has(.un:hover) {
+        grid-template-columns:  3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+      }
+      
+      #grid:has(.deux:hover) {
+        grid-template-columns:  0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+      }
+    
+      #grid:has(.trois:hover) {
+        grid-template-columns:  0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr
+      }
+    
+      #grid:has(.quatre:hover) {
+        grid-template-columns:  0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr
+      }
+    
+      #grid:has(.cinq:hover) {
+        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr 0.5fr
+      }
+    
+      #grid:has(.six:hover) {
+        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr 0.5fr
+      }
+    
+      #grid:has(.sept:hover) {
+        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr 0.5fr
+      }
+    
+      #grid:has(.huit:hover) {
+        grid-template-columns:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 3fr
+      }
+  
+    
+  }
+/***grid*/
