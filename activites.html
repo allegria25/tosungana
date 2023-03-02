@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOSUNGANA</title>
+    <link rel="stylesheet" href="activites.css">
+    <script src="https://kit.fontawesome.com/7367175e2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <!--MENU DE NAVIGATION-->
+     <nav>
+        <div class="logo"><h3>TOSUNGANA</h3></div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Activités</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="except" href="#"><button>Faire un don</button></a></li>
+            <i class="fa-solid fa-bars"></i>
+        </ul>
+    </nav>
+    
+    <!--FAUX MENU DE NAVIGATION-->
+        <ul class="faux-nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Activités</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="mont-font">
+
+            <ul class="background">
+               <div class="texte">
+                <h3>Nos activés sont organisées mensuellement </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum 
+                    voluptas mollitia quidem corporis rem neque, culpa tenetur explicabo, dolor eaque sint ea,
+                     animi quia. Nemo odit facilis omnis harum deserunt.</p>
+                     <div class="button">
+                        <button>Faire un don</button>
+                     </div>
+               </div>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+             </ul>
+        </div>
+
+        <div class="after-font">
+
+        </div>
+
+
+
+        
+
+    
+   
+    <script>
+const menu = document.querySelector(".fa-solid")
+const navlinks = document.querySelector(".faux-nav")
+
+menu.addEventListener('click', ()=>{
+navlinks.classList.toggle('show')
+})
+
+       
+    </script>
+</body>
+</html>

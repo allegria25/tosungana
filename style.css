@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2? family=Hepta+Slab:wght@100;300;400&family=Kumbh+Sans:wght@900&family=Montserrat:wght@100;200;300;400;500&family=Public+Sans:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400&family=Source+Sans+Pro:wght@300;400&display=swap');
-
-
-
-@import url('https://fonts.googleapis.com/css2? family=Gloock&family=Hepta+Slab:wght@100;300;400&family=Kumbh+Sans:wght@900&family=Montserrat:wght@100;200;300;400;500&family=Public+Sans:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400&family=Source+Sans+Pro:wght@300;400& display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2? family=Gloock&family=Hepta+Slab:wght@100;300;400&family=Josefin+Sans:wght@100;200&family=Kumbh+Sans:wght@900&family=Montserrat:wght@100;200;300;400;500&family=Public+Sans:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400& family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2? family=Gloock&family=Hepta+Slab:wght@100;300;400&family=Josefin+Sans:wght@100;200&family=Kumbh+Sans:wght@900&family=Montserrat:wght@100;200;300;400;500&family=Public+Sans:wght@200&family=Red+Hat+Display:wght@300&family=Roboto:wght@100;300;400& family=Six+Caps&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/circular-std');
 :root{
     --couleur-blue-foncé : #2c2640;
     --couleur-menu-active : rgb(253, 110, 58);
@@ -15,14 +9,17 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -30,7 +27,7 @@ a{
 }
 
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -151,7 +148,7 @@ header{
     font-size: 35px;
     padding-top: 100px;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
+
     
     
 
@@ -339,14 +336,10 @@ header{
    
 }
 
-
-
-
-
 .ecrit-bienvenu h6{
   padding-top: 10px;
   font-size: 50px;
-  font-family: 'Source Sans Pro', sans-serif;
+
   
 }
 
@@ -368,7 +361,7 @@ header{
  .after-bienvenue{
     background-color: var(--couleur-blanc-different);
     margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
  }
 
  .after-bienvenue-ecrit{
@@ -416,16 +409,17 @@ header{
 
  .visite{
     width: 300px;
-    background-color: var(--couleure-blue);
     flex: 1 200px;
     margin: 50px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: all 0.5s;
+    background-color: var(--couleure-blue);
  }
 
  .visite:hover{
-    background-color: var(--couleur-menu-active);
+    background-color: none;
+   
    
  }
 
@@ -461,7 +455,9 @@ header{
     padding-right: 15px;
     padding-left: 10px;
     transition: all 0.5s;
-    border: 1px solid var(--couleure-blue);
+    border: 000.2px solid var(--couleure-blue);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
     
  }
 
@@ -471,10 +467,17 @@ header{
     width: 100%;
  }
 
+
  .voir:hover{
     background-color: var(--couleure-blue);
     border: white;
  }
+
+ .voir:hover a{
+    color: white;
+    
+ }
+
 
 
 
@@ -777,7 +780,6 @@ header{
     top: 80px;
     left: 5px;
     font-size: 80px;
-    font-family: 'Times New Roman', Times, serif;
     color: var(--couleur-menu-active);
     
 }
@@ -788,7 +790,6 @@ header{
     top: 220px;
     right: 5px;
     font-size: 80px;
-    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -1160,14 +1161,12 @@ footer h3{
     
     .ecrit-bienvenu h6{
       font-size: 25px;
-      font-family: 'Source Sans Pro', sans-serif;
       
     }
 
 
     .ecrit-bienvenu P{
         font-size: 12px;
-        font-family: 'Source Sans Pro', sans-serif;
       }
 
     
